@@ -1,4 +1,6 @@
-// Ejercicio 3 - Explicacion
+/*
+EJERCICIO 3
+*/
 
 
 package Ejercicio3;

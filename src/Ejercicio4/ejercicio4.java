@@ -1,9 +1,13 @@
-// Un estudiante necesita calcular su rendimiento academico segun las siguientes calificaciones
-// Fisica, Quimica, Biologia , Matematicas, Informatica
-// Requisitos:
-// 1- Cada materia entre 1 y 10
-// 2- Porcentaje final (Suma total /50)*100
-// 3- de 0 a 59.9% mala | 60 a 80% mal | Mayor que 80% es excelente
+/*
+EJERCICIO 4 - EXPLICACION:
+ Un estudiante necesita calcular su rendimiento academico segun las siguientes calificaciones
+ Fisica, Quimica, Biologia , Matematicas, Informatica
+ Requisitos:
+ 1- Cada materia entre 1 y 10
+ 2- Porcentaje final (Suma total /50)*100
+ 3- de 0 a 59.9% mala | 60 a 80% mal | Mayor que 80% es excelente
+Desarrolla un programa que calcule la nota del estudiante segun sus inputs y que le diga como le fue en la materia
+*/
 
 package Ejercicio4;
 import javax.swing.JOptionPane;

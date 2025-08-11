@@ -1,4 +1,7 @@
-// Determinar si un numero es par o impar
+/*
+EJERCICIO 2 - Explicacion:
+Determine si un numero es impar
+*/
 
 package Ejercicio2;
 

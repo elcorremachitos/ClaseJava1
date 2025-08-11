@@ -19,17 +19,21 @@ public class ejercicio1 {
     }
 
     public int calulateHours(){
-        int hoursValue = 0;
-        short hoursWorked = Short.parseShort(JOptionPane.showInputDialog(null,"¿Cuantas horas trabajo el trabajador " + name + "?"));
-        this.hoursWorked = hoursWorked;
-        if (hoursWorked > 0 && hoursWorked <= 10){
-            hoursValue = 30000;
-        } else if (hoursWorked > 10){
-            hoursValue = 33000;
-        } else {
-            System.out.println("DEBES TRABAJAR MINIMO 1 HORA");
+        while (true){
+            try{
+                short hoursWorked = Short.parseShort(JOptionPane.showInputDialog(null,"¿Cuantas horas trabajo el trabajador " + name + "?"));
+                this.hoursWorked = hoursWorked;
+                if (hoursWorked > 0 && hoursWorked <= 10){
+                    return hoursWorked * 30000;
+                } else if (hoursWorked > 10){
+                    return hoursWorked * 33000;
+                } else {
+                    JOptionPane.showMessageDialog(null,"El trabajador debe tener minimo 1 Hora.");
+                }
+            } catch (NumberFormatException e){
+                JOptionPane.showMessageDialog(null,"Debes ingresar un numero valido.");
+            }
         }
-        return hoursWorked * hoursValue;
     }
 
     public String getName(){

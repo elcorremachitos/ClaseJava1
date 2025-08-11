@@ -5,9 +5,6 @@ public class MainEjercicio1 {
     public static void main(String[] args) {
         ejercicio1 worker = new ejercicio1();
         worker.addWorker();
-        int hoursValueTotal = worker.calulateHours();
-        String name = worker.getName();
-        short hoursWorked = worker.getHoursWorked();
-        JOptionPane.showMessageDialog(null,"El trabajador " + name + " tuvo una jornada de " + hoursWorked + " y su salario fue de " + hoursValueTotal);
+        JOptionPane.showMessageDialog(null,"El trabajador " + worker.getName() + " tuvo una jornada de " + worker.getHoursWorked() + " y su salario fue de " + worker.calulateHours());
     }
 }

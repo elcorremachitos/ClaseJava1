@@ -46,7 +46,7 @@ public class ejercicio4 {
     }
 
     public void calculateScore(){
-        float total = ((float) (fisScore + cheScore + bioScore + mathScore + infScore) /50)*100;
+        float total = (float)( (fisScore + cheScore + bioScore + mathScore + infScore) /50)*100;
         String note = "";
         if (total >= 0 && total < 60){
             note = "Mala";

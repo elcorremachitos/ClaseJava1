@@ -7,6 +7,6 @@ public class mainAlquilerLavadora {
         AlquilerLavadora lavadora = new AlquilerLavadora();
         lavadora.setHoras();
         lavadora.setTarifa();
-        JOptionPane.showMessageDialog(null,"Subtotal: " + lavadora.calcularSubtotal() + " Descuento: " + lavadora.calcularDescuento() + " Total: " + lavadora.calcularTotal());
+        JOptionPane.showMessageDialog(null,"Subtotal: " + lavadora.calcularSubtotal() + " Descuento: " + lavadora.calcularDescuento() + " Totall: " + lavadora.calcularTotal());
     }
 }

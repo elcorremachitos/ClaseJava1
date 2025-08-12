@@ -7,27 +7,30 @@ EJERCICIO 1 - Explicacion:
 Desarrolla un programa que muestre Nombre, total de Horas y salario Total.
 */
 
-package Ejercicio1;
+package EjercicioWorker;
 import javax.swing.JOptionPane;
 
-public class ejercicio1 {
+public class ejercicioWorker {
 
-    private short hoursWorked;
     private String name;
+    private float hoursWorked;
+    private float totalValue;
 
     public void addWorker(){
         this.name = JOptionPane.showInputDialog(null,"¿Como se llama el trabajador?");
     }
 
-    public int calulateHours(){
+    public void calulateHours(){
         while (true){
             try{
-                short hoursWorked = Short.parseShort(JOptionPane.showInputDialog(null,"¿Cuantas horas trabajo el trabajador " + name + "?"));
+                float hoursWorked = Float.parseFloat(JOptionPane.showInputDialog(null,"¿Cuantas horas hizo el trabajador " + name + "?"));
                 this.hoursWorked = hoursWorked;
                 if (hoursWorked > 0 && hoursWorked <= 10){
-                    return hoursWorked * 30000;
+                    this.totalValue = hoursWorked * 30000;
+                    return;
                 } else if (hoursWorked > 10){
-                    return hoursWorked * 33000;
+                    this.totalValue = hoursWorked * 33000;
+                    return;
                 } else {
                     JOptionPane.showMessageDialog(null,"El trabajador debe tener minimo 1 Hora.");
                 }
@@ -41,7 +44,11 @@ public class ejercicio1 {
         return name;
     }
 
-    public short getHoursWorked(){
+    public float getHoursWorked(){
         return hoursWorked;
+    }
+
+    public float getTotalValue(){
+        return totalValue;
     }
 }

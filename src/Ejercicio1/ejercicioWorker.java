@@ -7,7 +7,7 @@ EJERCICIO 1 - Explicacion:
 Desarrolla un programa que muestre Nombre, total de Horas y salario Total.
 */
 
-package EjercicioWorker;
+package Ejercicio1;
 import javax.swing.JOptionPane;
 
 public class ejercicioWorker {

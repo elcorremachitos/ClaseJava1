@@ -1,4 +1,4 @@
-package Ejercicio1;
+package Ejercicio9;
 import javax.swing.JOptionPane;
 
 public class AlquilerLavadora {
@@ -11,8 +11,6 @@ public class AlquilerLavadora {
         float horasUsadas = Float.parseFloat(JOptionPane.showInputDialog(null,"¿Cuantas horas uso la lavadora?"));
         if (horasUsadas > 0){
             this.horas = horasUsadas;
-        } else {
-            setHoras();
         }
     }
 
@@ -20,8 +18,6 @@ public class AlquilerLavadora {
         float tarifaUsada = Float.parseFloat(JOptionPane.showInputDialog(null,"¿Cual es la tarifa por hora?"));
         if (tarifaUsada > 0){
             this.tarifa = tarifaUsada;
-        } else {
-            setTarifa();
         }
     }
 
